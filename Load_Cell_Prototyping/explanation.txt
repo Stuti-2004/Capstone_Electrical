@@ -1,0 +1,28 @@
+1) initializes the hx711 scale and loads the calibration factor which is what we are using to convert the raw ADC counts into grams
+
+2) tare: this is doen automativally at the beginning of the code. the doTare()
+- waits for HX711 to stabilize
+- takes 50 readings
+- averages them
+- sets the averaged reading (in the output example it is -229327) as the 'new' zero. that is why we see 0g
+
+3) raw sampling & trimmed average : this is the first major filter- this removes noise spikes when trimming this average. 
+- takes 25 raw readings from the ADC
+- sorts the readings in numerical order, then removes the lowest and highest 4. the middle 17 are used in an average.
+
+(in testing, the H7X711 fluctuares by arund 20-50 counts even with no weights, so removing these extra counts produces a much more stable baseline.)
+
+- this is what stabilizes the raw numbers we are using here! its first sampling that gives us much cleaner outputs.
+
+
+4) calculate net counts:
+
+long net= raw (our raw readings that were filtered abit in #2) - offset (from the tare, 'new zero')
+
+5) convert net counts to grams
+float measuredWeight = net / calFactor (calibration factor is what this thing calculates to get the first 57 gram. think of it as manipulating that reading to make it accurate :) )
+
+6) short rolling median filter: essentially rejects sudden 'bad' readings by making sure the displayed value only shows a new number if it has been at that value consistently.
+- keeps the last 5 measured weights, sorts and takes the median. that average climbs a little slower but it allows us to get more accurate readings its just a tiny bt slow. 
+
+7) zero deadband: if teh weight is between -1.5g and +1.5g, if forces display to show 0g. added since on the way back down the load does a pretty good job until the zero gets involved and then in that case it forces the zero and we are set. 

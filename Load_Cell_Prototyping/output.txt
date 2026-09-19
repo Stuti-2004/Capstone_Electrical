@@ -1,0 +1,127 @@
+
+======================================
+HX711 + ESP32-C3 SCALE
+RESPONSIVE STABLE SAMPLING
+======================================
+
+HX711 detected.
+
+--------------------------------------
+TARING
+--------------------------------------
+Remove ALL weight.
+Keep the platform completely still.
+
+Done. Offset = -229327
+
+ZERO COMPLETE.
+
+
+======================================
+COMMANDS
+======================================
+t = manual tare / zero
+c = calibrate
+r = raw ADC readings
++ = increase calibration factor
+- = decrease calibration factor
+h = help
+
+Calibration factor: 402.684
+
+raw: -229336   net: -9   measured: -0.0 g   median: 0.0 g
+raw: -229345   net: -18   measured: -0.0 g   median: 0.0 g
+raw: -229349   net: -22   measured: -0.1 g   median: 0.0 g
+raw: -229360   net: -32   measured: -0.1 g   median: 0.0 g
+
+--------------------------------------
+CALIBRATION
+--------------------------------------
+1. Remove ALL weight.
+2. Keep platform completely still.
+3. Send any character.
+Zero set. Offset = -229393
+
+Place the known weight on the platform.
+Keep it completely still.
+
+Enter the weight in GRAMS:
+
+Waiting for the load cell to settle...
+
+Taking calibration measurements...
+Sample 1: 22559 counts
+Sample 2: 22654 counts
+Sample 3: 22738 counts
+Sample 4: 22806 counts
+Sample 5: 22850 counts
+Sample 6: 22913 counts
+Sample 7: 22936 counts
+Sample 8: 22960 counts
+Sample 9: 22988 counts
+Sample 10: 23000 counts
+Sample 11: 22997 counts
+Sample 12: 23000 counts
+Sample 13: 22995 counts
+Sample 14: 23007 counts
+Sample 15: 23000 counts
+
+--------------------------------------
+CALIBRATION COMPLETE
+--------------------------------------
+Known weight: 57.00 g
+Stable average counts: 22938
+New calibration factor: 402.421
+
+Copy this value into calFactor at
+the top of the sketch.
+
+raw: -206395   net: 22998   measured: 57.1 g   median: 57.1 g
+raw: -206397   net: 22996   measured: 57.1 g   median: 57.1 g
+raw: -206407   net: 22986   measured: 57.1 g   median: 57.1 g
+raw: -205908   net: 23485   measured: 58.4 g   median: 57.1 g
+raw: -174852   net: 54541   measured: 135.5 g   median: 57.1 g
+raw: -174470   net: 54923   measured: 136.5 g   median: 58.4 g
+raw: -174461   net: 54932   measured: 136.5 g   median: 135.5 g
+raw: -174480   net: 54913   measured: 136.5 g   median: 136.5 g
+raw: -174487   net: 54906   measured: 136.4 g   median: 136.5 g
+raw: -174499   net: 54894   measured: 136.4 g   median: 136.5 g
+raw: -174483   net: 54910   measured: 136.4 g   median: 136.4 g
+raw: -174497   net: 54896   measured: 136.4 g   median: 136.4 g
+raw: -174480   net: 54913   measured: 136.5 g   median: 136.4 g
+raw: -141988   net: 87405   measured: 217.2 g   median: 136.4 g
+raw: -87572   net: 141821   measured: 352.4 g   median: 136.5 g
+raw: -87573   net: 141820   measured: 352.4 g   median: 217.2 g
+raw: -87544   net: 141849   measured: 352.5 g   median: 352.4 g
+raw: -87540   net: 141853   measured: 352.5 g   median: 352.4 g
+raw: -87534   net: 141859   measured: 352.5 g   median: 352.5 g
+raw: -87515   net: 141878   measured: 352.6 g   median: 352.5 g
+raw: -87521   net: 141872   measured: 352.5 g   median: 352.5 g
+raw: -87516   net: 141877   measured: 352.6 g   median: 352.5 g
+raw: -87506   net: 141887   measured: 352.6 g   median: 352.6 g
+raw: -115253   net: 114140   measured: 283.6 g   median: 352.6 g
+raw: -174515   net: 54878   measured: 136.4 g   median: 352.5 g
+raw: -174560   net: 54833   measured: 136.3 g   median: 283.6 g
+raw: -174581   net: 54812   measured: 136.2 g   median: 136.4 g
+raw: -174588   net: 54805   measured: 136.2 g   median: 136.3 g
+raw: -174585   net: 54808   measured: 136.2 g   median: 136.2 g
+raw: -174563   net: 54830   measured: 136.3 g   median: 136.2 g
+raw: -174559   net: 54834   measured: 136.3 g   median: 136.2 g
+raw: -206149   net: 23244   measured: 57.8 g   median: 136.2 g
+raw: -206481   net: 22912   measured: 56.9 g   median: 136.2 g
+raw: -206487   net: 22906   measured: 56.9 g   median: 57.8 g
+raw: -206494   net: 22899   measured: 56.9 g   median: 56.9 g
+raw: -206522   net: 22871   measured: 56.8 g   median: 56.9 g
+raw: -206514   net: 22879   measured: 56.9 g   median: 56.9 g
+raw: -206528   net: 22865   measured: 56.8 g   median: 56.9 g
+raw: -220062   net: 9331   measured: 23.2 g   median: 56.8 g
+raw: -228781   net: 612   measured: 1.5 g   median: 56.8 g
+raw: -228824   net: 569   measured: 1.4 g   median: 23.2 g
+raw: -228880   net: 513   measured: 1.3 g   median: 1.5 g
+raw: -228903   net: 490   measured: 1.2 g   median: 0.0 g
+raw: -228963   net: 429   measured: 1.1 g   median: 0.0 g
+raw: -229018   net: 373   measured: 0.9 g   median: 0.0 g
+raw: -229038   net: 352   measured: 0.9 g   median: 0.0 g
+raw: -229071   net: 318   measured: 0.8 g   median: 0.0 g
+raw: -229109   net: 279   measured: 0.7 g   median: 0.0 g
+raw: -229138   net: 249   measured: 0.6 g   median: 0.0 g
