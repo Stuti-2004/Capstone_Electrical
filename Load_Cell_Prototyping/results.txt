@@ -1,0 +1,321 @@
+--------------------------------------
+TARING
+--------------------------------------
+Remove ALL weight.
+Keep the platform completely still.
+
+ZERO COMPLETE. Offset = -271448.9
+
+kg: 0.000   raw: -271508   win: 2   zeroAdj: 0.0
+kg: 0.000   raw: -271557   win: 5   zeroAdj: 0.0
+kg: 0.000   raw: -271491   win: 8   zeroAdj: 0.0
+kg: 0.000   raw: -271391   win: 10   zeroAdj: 0.0
+kg: 0.000   raw: -271529   win: 13   zeroAdj: 0.0
+kg: 0.000   raw: -271515   win: 16   zeroAdj: 0.0
+kg: 0.000   raw: -271442   win: 19   zeroAdj: 0.0
+kg: 0.000   raw: -271460   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271422   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271355   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271509   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271571   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271474   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271470   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271459   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271411   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271421   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271526   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271403   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271359   win: 20   zeroAdj: -0.0
+kg: 0.000   raw: -271360   win: 20   zeroAdj: 0.3
+kg: 0.000   raw: -271343   win: 20   zeroAdj: 1.0
+kg: 0.000   raw: -271427   win: 20   zeroAdj: 1.7
+kg: 0.000   raw: -271459   win: 20   zeroAdj: 2.7
+
+--------------------------------------
+CALIBRATION (KG)
+--------------------------------------
+1. Remove ALL weight.
+2. Keep platform completely still.
+3. Send any character.
+Zero captured. Counts = -271373.5
+
+Place the known weight on the platform.
+Put it in the SAME spot you will use later.
+Keep it completely still.
+
+Use between 5 and 40 kg (10-30 kg is best).
+
+Enter the weight in KILOGRAMS (e.g. 20 or 12.5):
+
+Letting the cell settle...
+  waiting for stable signal: sd=58.4  slope=66.3
+
+--------------------------------------
+CALIBRATION COMPLETE
+--------------------------------------
+Known weight: 1.360 kg
+Signal change: 17657 counts
+New calibration factor (counts/kg): 12983.141
+
+Copy this value into calFactor at the top.
+Then check with a SECOND, different weight.
+
+kg: 1.365   raw: -253716   win: 2   zeroAdj: 0.0
+kg: 1.363   raw: -253603   win: 5   zeroAdj: 0.0
+kg: 1.363   raw: -253672   win: 8   zeroAdj: 0.0
+kg: 1.363   raw: -253648   win: 10   zeroAdj: 0.0
+kg: 1.363   raw: -253665   win: 13   zeroAdj: 0.0
+kg: 1.363   raw: -253722   win: 16   zeroAdj: 0.0
+kg: 1.363   raw: -253727   win: 19   zeroAdj: 0.0
+kg: 1.363   raw: -253641   win: 20   zeroAdj: 0.0
+kg: 1.363   raw: -253691   win: 20   zeroAdj: 0.0
+kg: 1.363   raw: -253599   win: 20   zeroAdj: 0.0
+kg: 1.362   raw: -253701   win: 20   zeroAdj: 0.0
+kg: 1.362   raw: -253680   win: 20   zeroAdj: 0.0
+kg: 1.362   raw: -253579   win: 20   zeroAdj: 0.0
+kg: 1.363   raw: -253659   win: 20   zeroAdj: 0.0
+kg: 1.363   raw: -253654   win: 20   zeroAdj: 0.0
+kg: 1.363   raw: -253704   win: 20   zeroAdj: 0.0
+kg: 1.363   raw: -253668   win: 20   zeroAdj: 0.0
+kg: 1.363   raw: -253657   win: 20   zeroAdj: 0.0
+kg: 1.363   raw: -253670   win: 20   zeroAdj: 0.0
+kg: 1.363   raw: -253759   win: 20   zeroAdj: 0.0
+kg: 1.362   raw: -253741   win: 20   zeroAdj: 0.0
+kg: 1.361   raw: -253703   win: 20   zeroAdj: 0.0
+kg: 1.361   raw: -253764   win: 20   zeroAdj: 0.0
+kg: 1.360   raw: -253709   win: 20   zeroAdj: 0.0
+kg: 1.361   raw: -253762   win: 20   zeroAdj: 0.0
+kg: 1.360   raw: -253679   win: 20   zeroAdj: 0.0
+kg: 1.360   raw: -253653   win: 20   zeroAdj: 0.0
+kg: 1.360   raw: -253716   win: 20   zeroAdj: 0.0
+kg: 1.360   raw: -253675   win: 20   zeroAdj: 0.0
+kg: 1.360   raw: -253678   win: 20   zeroAdj: 0.0
+kg: 1.361   raw: -253657   win: 20   zeroAdj: 0.0
+kg: 1.361   raw: -253756   win: 20   zeroAdj: 0.0
+kg: 1.361   raw: -253706   win: 20   zeroAdj: 0.0
+kg: 1.361   raw: -253584   win: 20   zeroAdj: 0.0
+kg: 1.361   raw: -253652   win: 20   zeroAdj: 0.0
+kg: 1.363   raw: -253608   win: 20   zeroAdj: 0.0
+kg: 1.364   raw: -253625   win: 20   zeroAdj: 0.0
+kg: 1.364   raw: -253696   win: 20   zeroAdj: 0.0
+kg: 1.364   raw: -253681   win: 20   zeroAdj: 0.0
+kg: 1.365   raw: -253634   win: 20   zeroAdj: 0.0
+kg: 1.366   raw: -253601   win: 20   zeroAdj: 0.0
+kg: 1.366   raw: -253570   win: 20   zeroAdj: 0.0
+kg: 1.368   raw: -253521   win: 20   zeroAdj: 0.0
+kg: 1.369   raw: -253498   win: 20   zeroAdj: 0.0
+kg: 1.370   raw: -253501   win: 20   zeroAdj: 0.0
+kg: 1.371   raw: -253474   win: 20   zeroAdj: 0.0
+kg: 1.373   raw: -253598   win: 20   zeroAdj: 0.0
+kg: 1.373   raw: -253529   win: 20   zeroAdj: 0.0
+kg: 1.374   raw: -253570   win: 20   zeroAdj: 0.0
+kg: 1.374   raw: -253518   win: 20   zeroAdj: 0.0
+kg: 1.373   raw: -253621   win: 20   zeroAdj: 0.0
+kg: 1.372   raw: -253612   win: 20   zeroAdj: 0.0
+kg: 1.371   raw: -253545   win: 20   zeroAdj: 0.0
+kg: 1.371   raw: -253467   win: 20   zeroAdj: 0.0
+kg: 1.371   raw: -253620   win: 20   zeroAdj: 0.0
+kg: 1.371   raw: -253703   win: 20   zeroAdj: 0.0
+kg: 1.370   raw: -253610   win: 20   zeroAdj: 0.0
+kg: 1.370   raw: -253554   win: 20   zeroAdj: 0.0
+kg: 1.371   raw: -253610   win: 20   zeroAdj: 0.0
+kg: 1.371   raw: -253651   win: 20   zeroAdj: 0.0
+kg: 1.371   raw: -253509   win: 20   zeroAdj: 0.0
+kg: 1.371   raw: -253565   win: 20   zeroAdj: 0.0
+kg: 1.371   raw: -253530   win: 20   zeroAdj: 0.0
+kg: 1.372   raw: -253631   win: 20   zeroAdj: 0.0
+kg: 1.372   raw: -253479   win: 20   zeroAdj: 0.0
+kg: 1.373   raw: -253456   win: 20   zeroAdj: 0.0
+kg: 1.374   raw: -253551   win: 20   zeroAdj: 0.0
+kg: 1.374   raw: -253644   win: 20   zeroAdj: 0.0
+kg: 1.374   raw: -253503   win: 20   zeroAdj: 0.0
+kg: 1.374   raw: -253596   win: 20   zeroAdj: 0.0
+kg: 1.374   raw: -253568   win: 20   zeroAdj: 0.0
+kg: 1.373   raw: -253618   win: 20   zeroAdj: 0.0
+kg: 1.373   raw: -253559   win: 20   zeroAdj: 0.0
+kg: 1.372   raw: -253624   win: 20   zeroAdj: 0.0
+kg: 1.371   raw: -253576   win: 20   zeroAdj: 0.0
+kg: 1.371   raw: -253573   win: 20   zeroAdj: 0.0
+kg: 1.371   raw: -253637   win: 20   zeroAdj: 0.0
+kg: 1.371   raw: -253496   win: 20   zeroAdj: 0.0
+kg: 1.371   raw: -253509   win: 20   zeroAdj: 0.0
+kg: 1.371   raw: -253568   win: 20   zeroAdj: 0.0
+kg: 1.371   raw: -253504   win: 20   zeroAdj: 0.0
+kg: 1.372   raw: -253559   win: 20   zeroAdj: 0.0
+kg: 1.373   raw: -253573   win: 20   zeroAdj: 0.0
+kg: 1.373   raw: -253576   win: 20   zeroAdj: 0.0
+kg: 1.373   raw: -253635   win: 20   zeroAdj: 0.0
+kg: 1.372   raw: -253619   win: 20   zeroAdj: 0.0
+kg: 1.371   raw: -253599   win: 20   zeroAdj: 0.0
+kg: 1.370   raw: -253622   win: 20   zeroAdj: 0.0
+kg: 1.370   raw: -253599   win: 20   zeroAdj: 0.0
+kg: 1.369   raw: -253681   win: 20   zeroAdj: 0.0
+kg: 1.368   raw: -253709   win: 20   zeroAdj: 0.0
+kg: 1.366   raw: -253742   win: 20   zeroAdj: 0.0
+kg: 1.365   raw: -253621   win: 20   zeroAdj: 0.0
+kg: 1.365   raw: -253639   win: 20   zeroAdj: 0.0
+kg: 1.365   raw: -253658   win: 20   zeroAdj: 0.0
+kg: 1.364   raw: -253683   win: 20   zeroAdj: 0.0
+kg: 1.364   raw: -246478   win: 20   zeroAdj: 0.0
+kg: 2.046   raw: -221093   win: 3   zeroAdj: 0.0   STEP
+kg: 3.755   raw: -218334   win: 3   zeroAdj: 0.0   STEP
+kg: 4.160   raw: -215247   win: 3   zeroAdj: 0.0   STEP
+kg: 4.404   raw: -213163   win: 3   zeroAdj: 0.0   STEP
+kg: 4.453   raw: -211475   win: 5   zeroAdj: 0.0
+kg: 4.503   raw: -211185   win: 8   zeroAdj: 0.0
+kg: 4.561   raw: -208650   win: 11   zeroAdj: 0.0
+kg: 4.622   raw: -208444   win: 14   zeroAdj: 0.0
+kg: 4.650   raw: -208753   win: 16   zeroAdj: 0.0
+kg: 4.669   raw: -211157   win: 19   zeroAdj: 0.0
+kg: 4.691   raw: -211057   win: 20   zeroAdj: 0.0
+kg: 4.720   raw: -209623   win: 20   zeroAdj: 0.0
+kg: 4.736   raw: -210233   win: 20   zeroAdj: 0.0
+kg: 4.750   raw: -208971   win: 20   zeroAdj: 0.0
+kg: 4.751   raw: -207750   win: 20   zeroAdj: 0.0
+kg: 4.762   raw: -207445   win: 20   zeroAdj: 0.0
+kg: 4.775   raw: -207312   win: 20   zeroAdj: 0.0
+kg: 4.817   raw: -207551   win: 20   zeroAdj: 0.0
+kg: 4.853   raw: -208644   win: 20   zeroAdj: 0.0
+kg: 4.864   raw: -209180   win: 20   zeroAdj: 0.0
+kg: 4.870   raw: -209270   win: 20   zeroAdj: 0.0
+kg: 4.868   raw: -209093   win: 20   zeroAdj: 0.0
+kg: 4.851   raw: -209475   win: 20   zeroAdj: 0.0
+kg: 4.835   raw: -209671   win: 20   zeroAdj: 0.0
+kg: 4.808   raw: -209767   win: 20   zeroAdj: 0.0
+kg: 4.780   raw: -210066   win: 20   zeroAdj: 0.0
+kg: 4.765   raw: -209399   win: 20   zeroAdj: 0.0
+kg: 4.763   raw: -209141   win: 20   zeroAdj: 0.0
+kg: 4.764   raw: -209116   win: 20   zeroAdj: 0.0
+kg: 4.766   raw: -208940   win: 20   zeroAdj: 0.0
+kg: 4.771   raw: -209075   win: 20   zeroAdj: 0.0
+kg: 4.776   raw: -209300   win: 20   zeroAdj: 0.0
+kg: 4.780   raw: -209578   win: 20   zeroAdj: 0.0
+kg: 4.784   raw: -209633   win: 20   zeroAdj: 0.0
+kg: 4.782   raw: -209849   win: 20   zeroAdj: 0.0
+kg: 4.776   raw: -210252   win: 20   zeroAdj: 0.0
+kg: 4.760   raw: -210757   win: 20   zeroAdj: 0.0
+kg: 4.740   raw: -210616   win: 20   zeroAdj: 0.0
+kg: 4.728   raw: -210324   win: 20   zeroAdj: 0.0
+kg: 4.717   raw: -210218   win: 20   zeroAdj: 0.0
+kg: 4.710   raw: -210168   win: 20   zeroAdj: 0.0
+kg: 4.705   raw: -210090   win: 20   zeroAdj: 0.0
+kg: 4.702   raw: -209941   win: 20   zeroAdj: 0.0
+kg: 4.710   raw: -208902   win: 20   zeroAdj: 0.0
+kg: 4.730   raw: -209005   win: 20   zeroAdj: 0.0
+kg: 4.748   raw: -208760   win: 20   zeroAdj: 0.0
+kg: 4.761   raw: -208327   win: 20   zeroAdj: 0.0
+kg: 4.784   raw: -207776   win: 20   zeroAdj: 0.0
+kg: 4.812   raw: -208060   win: 20   zeroAdj: 0.0
+kg: 4.835   raw: -208049   win: 20   zeroAdj: 0.0
+kg: 4.848   raw: -208441   win: 20   zeroAdj: 0.0
+kg: 4.855   raw: -208584   win: 20   zeroAdj: 0.0
+kg: 4.858   raw: -208845   win: 20   zeroAdj: 0.0
+kg: 4.856   raw: -209057   win: 20   zeroAdj: 0.0
+kg: 4.850   raw: -208977   win: 20   zeroAdj: 0.0
+kg: 4.837   raw: -208890   win: 20   zeroAdj: 0.0
+kg: 4.828   raw: -208759   win: 20   zeroAdj: 0.0
+kg: 4.823   raw: -208443   win: 20   zeroAdj: 0.0
+kg: 4.823   raw: -208172   win: 20   zeroAdj: 0.0
+kg: 4.829   raw: -207993   win: 20   zeroAdj: 0.0
+kg: 4.838   raw: -208244   win: 20   zeroAdj: 0.0
+kg: 4.844   raw: -208273   win: 20   zeroAdj: 0.0
+kg: 4.851   raw: -208444   win: 20   zeroAdj: 0.0
+kg: 4.856   raw: -208202   win: 20   zeroAdj: 0.0
+kg: 4.863   raw: -207962   win: 20   zeroAdj: 0.0
+kg: 4.866   raw: -208141   win: 20   zeroAdj: 0.0
+kg: 4.868   raw: -208006   win: 20   zeroAdj: 0.0
+kg: 4.867   raw: -208173   win: 20   zeroAdj: 0.0
+kg: 4.867   raw: -208156   win: 20   zeroAdj: 0.0
+kg: 4.868   raw: -208331   win: 20   zeroAdj: 0.0
+kg: 4.868   raw: -208565   win: 20   zeroAdj: 0.0
+kg: 4.865   raw: -208407   win: 20   zeroAdj: 0.0
+kg: 4.860   raw: -208453   win: 20   zeroAdj: 0.0
+kg: 4.857   raw: -208470   win: 20   zeroAdj: 0.0
+kg: 4.852   raw: -208468   win: 20   zeroAdj: 0.0
+kg: 4.850   raw: -208241   win: 20   zeroAdj: 0.0
+kg: 4.850   raw: -208365   win: 20   zeroAdj: 0.0
+kg: 4.850   raw: -208206   win: 20   zeroAdj: 0.0
+kg: 4.852   raw: -208425   win: 20   zeroAdj: 0.0
+kg: 4.852   raw: -208283   win: 20   zeroAdj: 0.0
+kg: 4.854   raw: -208328   win: 20   zeroAdj: 0.0
+kg: 4.855   raw: -208344   win: 20   zeroAdj: 0.0
+kg: 4.855   raw: -208554   win: 20   zeroAdj: 0.0
+kg: 4.852   raw: -208578   win: 20   zeroAdj: 0.0
+kg: 4.851   raw: -208382   win: 20   zeroAdj: 0.0
+kg: 4.849   raw: -208715   win: 20   zeroAdj: 0.0
+kg: 4.846   raw: -208853   win: 20   zeroAdj: 0.0
+kg: 4.838   raw: -209055   win: 20   zeroAdj: 0.0
+kg: 4.833   raw: -208809   win: 20   zeroAdj: 0.0
+kg: 4.829   raw: -208644   win: 20   zeroAdj: 0.0
+kg: 4.828   raw: -208473   win: 20   zeroAdj: 0.0
+kg: 4.827   raw: -208585   win: 20   zeroAdj: 0.0
+kg: 4.825   raw: -208736   win: 20   zeroAdj: 0.0
+kg: 4.824   raw: -208803   win: 20   zeroAdj: 0.0
+kg: 4.822   raw: -209281   win: 20   zeroAdj: 0.0
+kg: 4.821   raw: -209339   win: 20   zeroAdj: 0.0
+kg: 4.814   raw: -209500   win: 20   zeroAdj: 0.0
+kg: 4.803   raw: -209766   win: 20   zeroAdj: 0.0
+kg: 4.788   raw: -210027   win: 20   zeroAdj: 0.0
+kg: 4.777   raw: -209851   win: 20   zeroAdj: 0.0
+kg: 4.763   raw: -210087   win: 20   zeroAdj: 0.0
+kg: 4.749   raw: -210193   win: 20   zeroAdj: 0.0
+kg: 4.739   raw: -209946   win: 20   zeroAdj: 0.0
+kg: 4.735   raw: -209860   win: 20   zeroAdj: 0.0
+kg: 4.731   raw: -209618   win: 20   zeroAdj: 0.0
+kg: 4.733   raw: -209866   win: 20   zeroAdj: 0.0
+kg: 4.730   raw: -225536   win: 20   zeroAdj: 0.0
+kg: 3.377   raw: -250952   win: 3   zeroAdj: 0.0   STEP
+kg: 1.477   raw: -253367   win: 3   zeroAdj: 0.0   STEP
+kg: 1.428   raw: -253843   win: 6   zeroAdj: 0.0
+kg: 1.408   raw: -253957   win: 8   zeroAdj: 0.0
+kg: 1.389   raw: -254126   win: 11   zeroAdj: 0.0
+kg: 1.376   raw: -254164   win: 14   zeroAdj: 0.0
+kg: 1.369   raw: -254040   win: 17   zeroAdj: 0.0
+kg: 1.366   raw: -253978   win: 19   zeroAdj: 0.0
+kg: 1.346   raw: -254054   win: 20   zeroAdj: 0.0
+kg: 1.338   raw: -254034   win: 20   zeroAdj: 0.0
+kg: 1.336   raw: -253946   win: 20   zeroAdj: 0.0
+kg: 1.336   raw: -253963   win: 20   zeroAdj: 0.0
+kg: 1.337   raw: -253879   win: 20   zeroAdj: 0.0
+kg: 1.339   raw: -253804   win: 20   zeroAdj: 0.0
+kg: 1.341   raw: -253744   win: 20   zeroAdj: 0.0
+kg: 1.343   raw: -253809   win: 20   zeroAdj: 0.0
+kg: 1.346   raw: -253812   win: 20   zeroAdj: 0.0
+kg: 1.348   raw: -253937   win: 20   zeroAdj: 0.0
+kg: 1.348   raw: -253795   win: 20   zeroAdj: 0.0
+kg: 1.351   raw: -253843   win: 20   zeroAdj: 0.0
+kg: 1.352   raw: -253774   win: 20   zeroAdj: 0.0
+kg: 1.353   raw: -253821   win: 20   zeroAdj: 0.0
+kg: 1.353   raw: -253798   win: 20   zeroAdj: 0.0
+kg: 1.352   raw: -253875   win: 20   zeroAdj: 0.0
+kg: 1.352   raw: -253812   win: 20   zeroAdj: 0.0
+kg: 1.353   raw: -253834   win: 20   zeroAdj: 0.0
+kg: 1.352   raw: -253750   win: 20   zeroAdj: 0.0
+kg: 1.352   raw: -253812   win: 20   zeroAdj: 0.0
+kg: 1.352   raw: -253793   win: 20   zeroAdj: 0.0
+kg: 1.352   raw: -253784   win: 20   zeroAdj: 0.0
+kg: 1.352   raw: -253791   win: 20   zeroAdj: 0.0
+kg: 1.353   raw: -253805   win: 20   zeroAdj: 0.0
+kg: 1.353   raw: -253859   win: 20   zeroAdj: 0.0
+kg: 1.349   raw: -261591   win: 20   zeroAdj: 0.0
+kg: 0.430   raw: -271534   win: 2   zeroAdj: 0.0   STEP
+kg: 0.000   raw: -271543   win: 2   zeroAdj: 0.0   STEP
+kg: 0.000   raw: -271471   win: 5   zeroAdj: 0.0
+kg: 0.000   raw: -271609   win: 7   zeroAdj: 0.0
+kg: 0.000   raw: -271491   win: 10   zeroAdj: 0.0
+kg: 0.000   raw: -271601   win: 13   zeroAdj: 0.0
+kg: 0.000   raw: -271510   win: 16   zeroAdj: 0.0
+kg: 0.000   raw: -271449   win: 18   zeroAdj: 0.0
+kg: 0.000   raw: -271612   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271524   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271510   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271401   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271522   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271540   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271463   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271610   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271471   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271395   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271453   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271454   win: 20   zeroAdj: 0.0
+kg: 0.000   raw: -271514   win: 20   zeroAdj: -2.4
