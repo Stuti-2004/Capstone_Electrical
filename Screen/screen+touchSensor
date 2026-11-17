@@ -1,0 +1,277 @@
+
+#include <Wire.h>
+#include <time.h>
+#include <sys/time.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+#include <Fonts/TomThumb.h>
+
+// ---------------- OLED SETTINGS ----------------
+
+#define SCREEN_WIDTH 128
+#define SCREEN_HEIGHT 64
+#define OLED_RESET -1
+#define SCREEN_ADDRESS 0x3C
+
+Adafruit_SSD1306 display(
+  SCREEN_WIDTH,
+  SCREEN_HEIGHT,
+  &Wire,
+  OLED_RESET
+);
+
+// ---------------- TOUCH SETTINGS ----------------
+
+const int touchPin = 4;
+
+// Adjust these based on Serial Monitor readings
+const int touchThreshold = 800;
+const int releaseThreshold = 850;
+
+const int requiredReleaseReadings = 10;
+const int requiredTouchReadings = 3;
+
+int releaseCount = 0;
+int touchCount = 0;
+
+bool sensorArmed = false;
+bool screenOn = false;
+
+// Screen timeout
+const unsigned long screenTimeout = 10000;
+
+unsigned long lastTouchTime = 0;
+unsigned long lastDisplayUpdate = 0;
+
+// ---------------- INITIAL DATE AND TIME ----------------
+
+const int initialYear = 2026;
+const int initialMonth = 11;
+const int initialDay = 16;
+
+const int initialHour = 14;
+const int initialMinute = 30;
+const int initialSecond = 0;
+
+// ---------------- SETUP ----------------
+
+void setup() {
+
+  Serial.begin(115200);
+
+  Wire.begin(21, 22);
+
+  if (!display.begin(
+    SSD1306_SWITCHCAPVCC,
+    SCREEN_ADDRESS
+  )) {
+    Serial.println("OLED initialization failed!");
+    while (true);
+  }
+
+  // Clear and switch OLED off
+  display.clearDisplay();
+  display.display();
+  display.ssd1306_command(SSD1306_DISPLAYOFF);
+
+  // Set Calgary timezone
+  setenv("TZ", "MST7MDT,M3.2.0/2,M11.1.0/2", 1);
+  tzset();
+
+  // Initialize internal RTC
+  setInitialTime();
+
+  Serial.println("-----------------------");
+  Serial.println("ESP32 TOUCH CLOCK");
+  Serial.println("-----------------------");
+
+  Serial.println("Waiting for untouched sensor...");
+  Serial.println("Keep your finger away from GPIO 4.");
+
+  delay(2000);
+}
+
+// ---------------- SET INITIAL TIME ----------------
+
+void setInitialTime() {
+
+  struct tm timeinfo = {};
+
+  timeinfo.tm_year = initialYear - 1900;
+  timeinfo.tm_mon = initialMonth - 1;
+  timeinfo.tm_mday = initialDay;
+
+  timeinfo.tm_hour = initialHour;
+  timeinfo.tm_min = initialMinute;
+  timeinfo.tm_sec = initialSecond;
+
+  // Convert local time to timestamp
+  time_t timestamp = mktime(&timeinfo);
+
+  struct timeval tv;
+
+  tv.tv_sec = timestamp;
+  tv.tv_usec = 0;
+
+  settimeofday(&tv, NULL);
+}
+
+// ---------------- MAIN LOOP ----------------
+
+void loop() {
+
+  int touchValue = touchRead(touchPin);
+
+  // Print sensor readings
+  Serial.print("Touch: ");
+  Serial.print(touchValue);
+
+  // ---------------- ARM SENSOR ----------------
+
+  if (!sensorArmed) {
+
+    if (touchValue >= releaseThreshold) {
+
+      releaseCount++;
+
+      if (releaseCount >= requiredReleaseReadings) {
+
+        sensorArmed = true;
+
+        Serial.println(" | SENSOR ARMED");
+
+      } else {
+        Serial.println(" | Waiting...");
+      }
+
+    } else {
+
+      releaseCount = 0;
+
+      Serial.println(" | Waiting for release...");
+    }
+
+    delay(50);
+    return;
+  }
+
+  // ---------------- DETECT TOUCH ----------------
+
+  if (touchValue < touchThreshold) {
+
+    touchCount++;
+
+    if (touchCount >= requiredTouchReadings) {
+
+      lastTouchTime = millis();
+
+      // Activate OLED
+      if (!screenOn) {
+
+        display.ssd1306_command(SSD1306_DISPLAYON);
+
+        screenOn = true;
+
+        Serial.println("DISPLAY ACTIVATED");
+
+        updateClock();
+
+        lastDisplayUpdate = millis();
+      }
+    }
+
+  } else {
+
+    touchCount = 0;
+  }
+
+  // ---------------- SCREEN TIMEOUT ----------------
+
+  if (screenOn &&
+      millis() - lastTouchTime >= screenTimeout) {
+
+    display.ssd1306_command(SSD1306_DISPLAYOFF);
+
+    screenOn = false;
+
+    Serial.println("DISPLAY OFF");
+  }
+
+  // ---------------- UPDATE CLOCK ----------------
+
+  if (screenOn &&
+      millis() - lastDisplayUpdate >= 1000) {
+
+    lastDisplayUpdate = millis();
+
+    updateClock();
+  }
+
+  delay(50);
+}
+
+// ---------------- UPDATE CLOCK ----------------
+
+void updateClock() {
+
+  struct tm timeinfo;
+
+  if (!getLocalTime(&timeinfo, 0)) {
+    return;
+  }
+
+  char timeString[20];
+  char dateString[30];
+
+  // Time without seconds
+  strftime(
+    timeString,
+    sizeof(timeString),
+    "%I:%M %p",
+    &timeinfo
+  );
+
+  strftime(
+    dateString,
+    sizeof(dateString),
+    "%A, %b %d",
+    &timeinfo
+  );
+
+  display.clearDisplay();
+
+  display.setTextColor(SSD1306_WHITE);
+
+  // Header
+  display.setFont(NULL);
+  display.setTextSize(1);
+  display.setCursor(0, 0);
+  display.println("MY ESP32 CLOCK");
+
+  display.drawLine(0, 12, 128, 12, SSD1306_WHITE);
+
+  // Tiny custom font for time
+  display.setFont(&TomThumb);
+
+  int16_t x1, y1;
+  uint16_t w, h;
+
+  display.getTextBounds(
+    timeString, 0, 0,
+    &x1, &y1, &w, &h
+  );
+
+  // Center time horizontally
+  display.setCursor((128 - w) / 2, 37);
+  display.print(timeString);
+
+  // Return to standard font for date
+  display.setFont(NULL);
+  display.setTextSize(1);
+
+  display.setCursor(12, 52);
+  display.println(dateString);
+
+  display.display();
+}
+
